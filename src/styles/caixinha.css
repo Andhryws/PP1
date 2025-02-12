@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin: 20px auto;
+    transition: none;
+    min-height: 200px;
+    
+}
+
+.container:hover {
+    transition: none; /* Remove a animação ao passar o mouse */
+}
+
+.image-box {
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.info-box {
+    background: gray;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    transition: none;
+}
+
+.btn-primary {
+    background: cyan;
+    color: black;
+}
+
+.btn-primary:hover {
+    background: black;
+}
+
+.btn-secondary {
+    background: cyan;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background: cyan;
+}
+
+.hidden {
+    display: none;
+}
+
+.pix-code {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pix-key {
+    color: cyan;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Adicionando mais espaço abaixo do título "Detalhes do Projeto" */
+.details-title {
+    margin-bottom: 30px;
+}
