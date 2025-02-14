@@ -83,11 +83,11 @@ $campanhas = $stmt->fetchAll();
         <div class="card2">
           <div id="main-page-<?php echo $campanha['id']; ?>" class="container">     
             <div class="image-box">
-              <img src="../backend/ver_imagem.php?id=<?php echo $campanha['id']; ?>"class="campaign-image"><br><br>
+            <h2><?php echo htmlspecialchars($campanha['titulo']); ?></h2><br><br>
             </div>
             <div class="info-box">
-              <p><strong>Número de apoiadores:</strong> <span id="apoiadores-<?php echo $campanha['id']; ?>">0</span></p>
-              <p><strong>Dias restantes da campanha:</strong> <span id="dias_restantes-<?php echo $campanha['id']; ?>">0</span></p>
+             
+      
               <p><strong>Meta de arrecadação:</strong> R$ 
               <?php 
                 // Remova qualquer caractere não numérico, exceto ponto e vírgula

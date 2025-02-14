@@ -9,17 +9,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $crowdfunding = $_POST['crowdfunding'];
     $localizacao = $_POST['localizacao'];
     $meta = $_POST['meta'];
-
-    // Lendo a imagem
-    $imagem = file_get_contents($_FILES["imagem"]["tmp_name"]);
+    $titulo = $_POST['titulo'];
 
     try {
-        $stmt = $pdo->prepare("INSERT INTO campanhas (criador, contato, descricao, imagem, pix, crowdfunding, localizacao, meta) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->execute([$criador, $contato, $descricao, $imagem, $pix, $crowdfunding, $localizacao, $meta]);
+        $stmt = $pdo->prepare("INSERT INTO campanhas (criador, contato, descricao, pix, crowdfunding, localizacao, meta, titulo) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->execute([$criador, $contato, $descricao, $pix, $crowdfunding, $localizacao, $meta, $titulo]);
 
+        // Definindo o cabeçalho da resposta como JSON
+        header('Content-Type: application/json');
         // Retornando resposta JSON de sucesso
         echo json_encode(['status' => 'success']);
     } catch (Exception $e) {
+        // Definindo o cabeçalho da resposta como JSON
+        header('Content-Type: application/json');
         // Retornando resposta JSON de erro
         echo json_encode(['status' => 'error', 'message' => $e->getMessage()]);
     }

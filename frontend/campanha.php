@@ -122,8 +122,8 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="file" name="imagem" id="imagem" class="inputUser" required="">
-                    <label for="imagem" class="labelInput">Imagem</label>
+                    <input type="text" name="titulo" id="titulo" class="inputUser" required="">
+                    <label for="titulo" class="labelInput">Título do projeto</label>
                 </div>
                 <br><br>
                 <p>Tipo de crowdfunding:</p>
