@@ -80,7 +80,18 @@
     text-align: center;
 }
 
+.vantagens-p4 .card-green{
+    width: 100%; /* Ajusta a largura dos cards */
+    max-width: 500px; /* Define uma largura máxima */
+}
 
-
+.card-green {
+    background-color: #d4edda; /* Cor de fundo verde claro */
+    border: 1px solid #c3e6cb; /* Borda verde */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
 
 

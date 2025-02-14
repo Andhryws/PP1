@@ -104,7 +104,7 @@
     <div class="box">
         <form id="cadastroForm2" enctype='multipart/form-data'>
             <fieldset>
-                <legend><b>Cadastro</b></legend>
+                <legend><b>Criar campanha</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="criador" id="criador" class="inputUser" required="">
