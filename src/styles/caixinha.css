@@ -19,14 +19,15 @@ body {
     width: 80%;
     max-width: 400px;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px; 
+    box-shadow: none; 
     position: relative;
     margin: 20px auto;
     transition: none;
     min-height: 200px;
+    border: none; 
     
 }
 

@@ -25,7 +25,7 @@ if(isset($_POST['submit']) && !empty($_POST['email'] && !empty($_POST['senha']))
    else{
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
-     header('Location: ../frontend/sistema.html');
+     header('Location: ../frontend/sistema.php');
    }
 }
 else
